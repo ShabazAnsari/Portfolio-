@@ -29,7 +29,7 @@ body {
 }
 
 section {
-    /* min-height: 100vh; */
+    /* min-height: 100vh;  */
     padding: 10rem 9% 2rem;
 }
 
@@ -158,6 +158,7 @@ span {
 
 .btn :hover {
     box-shadow: none;
+    cursor: pointer;
 }
 
 .about {
@@ -202,6 +203,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    height: 100%;
 }
 
 .services-container .services-box {
@@ -235,6 +237,7 @@ span {
 
 .portfolio {
     background-color: var(--second-bg-color);
+    margin-top: 10rem;
 }
 
 .portfolio h2 {
@@ -242,18 +245,20 @@ span {
 }
 
 .portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); */
     align-items: center;
+    justify-content: center;
     gap: 2.5rem;
 }
 
-.portfolio-container .portfolio-box {
+.portfolio-box {
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
+    width: 100%;
 }
 
 .portfolio-box img {
@@ -346,7 +351,7 @@ span {
     resize: none;
 }
 
-.contact form .btn{
+.contact form   {
     margin-top: 2rem;
 cursor: pointer;
 }
